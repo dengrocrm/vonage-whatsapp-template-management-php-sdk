@@ -29,7 +29,13 @@ To install the bindings via [Composer](https://getcomposer.org/), add the follow
 }
 ```
 
-Then run `composer install`
+Then run
+```
+composer require dengrocrm/vonage-whatsapp-template-management-php-sdk:1.4.0
+```
+```
+composer install
+```
 
 ### Manual Installation
 
