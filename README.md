@@ -60,7 +60,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 $config = DengroCrm\VonageWhatsAppTemplateManagement\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new DengroCrm\VonageWhatsAppTemplateManagement\Api\DefaultApi(
+$apiInstance = new DengroCrm\VonageWhatsAppTemplateManagement\Api\WhatsAppTemplateApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -74,7 +74,7 @@ try {
     $result = $apiInstance->createTemplate($id, $content_type, $create_template_request);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling DefaultApi->createTemplate: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling WhatsAppTemplateApi->createTemplate: ', $e->getMessage(), PHP_EOL;
 }
 
 ```
@@ -85,12 +85,12 @@ All URIs are relative to *https://api.nexmo.com/v2/whatsapp-manager*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*DefaultApi* | [**createTemplate**](docs/Api/DefaultApi.md#createtemplate) | **POST** /wabas/{id}/templates | Create Template
-*DefaultApi* | [**deleteTemplate**](docs/Api/DefaultApi.md#deletetemplate) | **DELETE** /wabas/{id}/templates | Delete Template
-*DefaultApi* | [**getTemplate**](docs/Api/DefaultApi.md#gettemplate) | **GET** /wabas/{id}/templates/{template_id} | Get Template
-*DefaultApi* | [**listTemplates**](docs/Api/DefaultApi.md#listtemplates) | **GET** /wabas/{id}/templates | List Templates
-*DefaultApi* | [**mediaUpload**](docs/Api/DefaultApi.md#mediaupload) | **POST** /media/uploads | Media Upload
-*DefaultApi* | [**updateTemplate**](docs/Api/DefaultApi.md#updatetemplate) | **PUT** /wabas/{id}/templates/{template_id} | Update Template
+*WhatsAppTemplateApi* | [**createTemplate**](docs/Api/WhatsAppTemplateApi.md#createtemplate) | **POST** /wabas/{id}/templates | Create Template
+*WhatsAppTemplateApi* | [**deleteTemplate**](docs/Api/WhatsAppTemplateApi.md#deletetemplate) | **DELETE** /wabas/{id}/templates | Delete Template
+*WhatsAppTemplateApi* | [**getTemplate**](docs/Api/WhatsAppTemplateApi.md#gettemplate) | **GET** /wabas/{id}/templates/{template_id} | Get Template
+*WhatsAppTemplateApi* | [**listTemplates**](docs/Api/WhatsAppTemplateApi.md#listtemplates) | **GET** /wabas/{id}/templates | List Templates
+*WhatsAppTemplateApi* | [**mediaUpload**](docs/Api/WhatsAppTemplateApi.md#mediaupload) | **POST** /media/uploads | Media Upload
+*WhatsAppTemplateApi* | [**updateTemplate**](docs/Api/WhatsAppTemplateApi.md#updatetemplate) | **PUT** /wabas/{id}/templates/{template_id} | Update Template
 
 ## Models
 
