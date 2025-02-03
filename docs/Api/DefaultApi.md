@@ -1,15 +1,15 @@
-# DengroCrm\VonageWhatsAppTemplateManagement\DefaultApi
+# DengroCrm\VonageWhatsAppTemplateManagement\WhatsAppTemplateApi
 
 All URIs are relative to https://api.nexmo.com/v2/whatsapp-manager, except if the operation defines another base path.
 
 | Method | HTTP request | Description |
 | ------------- | ------------- | ------------- |
-| [**createTemplate()**](DefaultApi.md#createTemplate) | **POST** /wabas/{id}/templates | Create Template |
-| [**deleteTemplate()**](DefaultApi.md#deleteTemplate) | **DELETE** /wabas/{id}/templates | Delete Template |
-| [**getTemplate()**](DefaultApi.md#getTemplate) | **GET** /wabas/{id}/templates/{template_id} | Get Template |
-| [**listTemplates()**](DefaultApi.md#listTemplates) | **GET** /wabas/{id}/templates | List Templates |
-| [**mediaUpload()**](DefaultApi.md#mediaUpload) | **POST** /media/uploads | Media Upload |
-| [**updateTemplate()**](DefaultApi.md#updateTemplate) | **PUT** /wabas/{id}/templates/{template_id} | Update Template |
+| [**createTemplate()**](WhatsAppTemplateApi.md#createTemplate) | **POST** /wabas/{id}/templates | Create Template |
+| [**deleteTemplate()**](WhatsAppTemplateApi.md#deleteTemplate) | **DELETE** /wabas/{id}/templates | Delete Template |
+| [**getTemplate()**](WhatsAppTemplateApi.md#getTemplate) | **GET** /wabas/{id}/templates/{template_id} | Get Template |
+| [**listTemplates()**](WhatsAppTemplateApi.md#listTemplates) | **GET** /wabas/{id}/templates | List Templates |
+| [**mediaUpload()**](WhatsAppTemplateApi.md#mediaUpload) | **POST** /media/uploads | Media Upload |
+| [**updateTemplate()**](WhatsAppTemplateApi.md#updateTemplate) | **PUT** /wabas/{id}/templates/{template_id} | Update Template |
 
 
 ## `createTemplate()`
@@ -33,7 +33,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 $config = DengroCrm\VonageWhatsAppTemplateManagement\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new DengroCrm\VonageWhatsAppTemplateManagement\Api\DefaultApi(
+$apiInstance = new DengroCrm\VonageWhatsAppTemplateManagement\Api\WhatsAppTemplateApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -47,7 +47,7 @@ try {
     $result = $apiInstance->createTemplate($id, $content_type, $create_template_request);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling DefaultApi->createTemplate: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling WhatsAppTemplateApi->createTemplate: ', $e->getMessage(), PHP_EOL;
 }
 ```
 
@@ -97,7 +97,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 $config = DengroCrm\VonageWhatsAppTemplateManagement\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new DengroCrm\VonageWhatsAppTemplateManagement\Api\DefaultApi(
+$apiInstance = new DengroCrm\VonageWhatsAppTemplateManagement\Api\WhatsAppTemplateApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -110,7 +110,7 @@ $hsm_id = 13; // string | The ID of the template to be deleted. This parameter i
 try {
     $apiInstance->deleteTemplate($id, $name, $hsm_id);
 } catch (Exception $e) {
-    echo 'Exception when calling DefaultApi->deleteTemplate: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling WhatsAppTemplateApi->deleteTemplate: ', $e->getMessage(), PHP_EOL;
 }
 ```
 
@@ -160,7 +160,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 $config = DengroCrm\VonageWhatsAppTemplateManagement\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new DengroCrm\VonageWhatsAppTemplateManagement\Api\DefaultApi(
+$apiInstance = new DengroCrm\VonageWhatsAppTemplateManagement\Api\WhatsAppTemplateApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -173,7 +173,7 @@ try {
     $result = $apiInstance->getTemplate($id, $template_id);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling DefaultApi->getTemplate: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling WhatsAppTemplateApi->getTemplate: ', $e->getMessage(), PHP_EOL;
 }
 ```
 
@@ -222,7 +222,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 $config = DengroCrm\VonageWhatsAppTemplateManagement\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new DengroCrm\VonageWhatsAppTemplateManagement\Api\DefaultApi(
+$apiInstance = new DengroCrm\VonageWhatsAppTemplateManagement\Api\WhatsAppTemplateApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -244,7 +244,7 @@ try {
     $result = $apiInstance->listTemplates($id, $limit, $before, $after, $category, $content, $language, $name, $name_or_content, $quality_score, $status);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling DefaultApi->listTemplates: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling WhatsAppTemplateApi->listTemplates: ', $e->getMessage(), PHP_EOL;
 }
 ```
 
@@ -302,7 +302,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 $config = DengroCrm\VonageWhatsAppTemplateManagement\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new DengroCrm\VonageWhatsAppTemplateManagement\Api\DefaultApi(
+$apiInstance = new DengroCrm\VonageWhatsAppTemplateManagement\Api\WhatsAppTemplateApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -316,7 +316,7 @@ try {
     $result = $apiInstance->mediaUpload($file_type, $content_type, $mediafile);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling DefaultApi->mediaUpload: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling WhatsAppTemplateApi->mediaUpload: ', $e->getMessage(), PHP_EOL;
 }
 ```
 
@@ -366,7 +366,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 $config = DengroCrm\VonageWhatsAppTemplateManagement\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new DengroCrm\VonageWhatsAppTemplateManagement\Api\DefaultApi(
+$apiInstance = new DengroCrm\VonageWhatsAppTemplateManagement\Api\WhatsAppTemplateApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -380,7 +380,7 @@ $update_template_request = new \DengroCrm\VonageWhatsAppTemplateManagement\Model
 try {
     $apiInstance->updateTemplate($id, $template_id, $content_type, $update_template_request);
 } catch (Exception $e) {
-    echo 'Exception when calling DefaultApi->updateTemplate: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling WhatsAppTemplateApi->updateTemplate: ', $e->getMessage(), PHP_EOL;
 }
 ```
 

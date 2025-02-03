@@ -1,6 +1,6 @@
 <?php
 /**
- * DefaultApi
+ * WhatsAppTemplateApi
  * PHP version 7.4
  *
  * @category Class
@@ -41,14 +41,14 @@ use DengroCrm\VonageWhatsAppTemplateManagement\HeaderSelector;
 use DengroCrm\VonageWhatsAppTemplateManagement\ObjectSerializer;
 
 /**
- * DefaultApi Class Doc Comment
+ * WhatsAppTemplateApi Class Doc Comment
  *
  * @category Class
  * @package  DengroCrm\VonageWhatsAppTemplateManagement
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
-class DefaultApi
+class WhatsAppTemplateApi
 {
     /**
      * @var ClientInterface

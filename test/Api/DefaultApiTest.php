@@ -1,6 +1,6 @@
 <?php
 /**
- * DefaultApiTest
+ * WhatsAppTemplateApiTest
  * PHP version 7.4
  *
  * @category Class
@@ -34,14 +34,14 @@ use \DengroCrm\VonageWhatsAppTemplateManagement\ObjectSerializer;
 use PHPUnit\Framework\TestCase;
 
 /**
- * DefaultApiTest Class Doc Comment
+ * WhatsAppTemplateApiTest Class Doc Comment
  *
  * @category Class
  * @package  DengroCrm\VonageWhatsAppTemplateManagement
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
-class DefaultApiTest extends TestCase
+class WhatsAppTemplateApiTest extends TestCase
 {
 
     /**
