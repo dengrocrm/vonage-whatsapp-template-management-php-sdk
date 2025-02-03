@@ -1,5 +1,4 @@
 {
-    "name": "dengrocrm/vonage-whatsapp-template-management-php-sdk",
     "description": "The Messages API now offers the WhatsApp Template Management API that allow you to manage templates for your WABAs and cut out the manual step of submitting and checking templates manually. You can manage your templates using the Template Management API, including adding new templates, retrieving their statuses, and deleting any that are already in use. Different sorts of media can be sent with each WhatsApp message template. You can manage your media files via the API and set up extra features to improve their functionality.",
     "keywords": [
         "openapitools",
@@ -31,9 +30,9 @@
         "friendsofphp/php-cs-fixer": "^3.5"
     },
     "autoload": {
-        "psr-4": { "OpenAPI\\Client\\" : "lib/" }
+        "psr-4": { "DengroCrm\\VonageWhatsAppTemplateManagement\\" : "lib/" }
     },
     "autoload-dev": {
-        "psr-4": { "OpenAPI\\Client\\Test\\" : "test/" }
+        "psr-4": { "DengroCrm\\VonageWhatsAppTemplateManagement\\Test\\" : "test/" }
     }
 }

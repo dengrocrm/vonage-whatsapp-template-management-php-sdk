@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  DengroCrm\VonageWhatsAppTemplateManagement
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace DengroCrm\VonageWhatsAppTemplateManagement\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \DengroCrm\VonageWhatsAppTemplateManagement\ObjectSerializer;
 
 /**
  * WhatsAppTemplateComponentsInner Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  DengroCrm\VonageWhatsAppTemplateManagement
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,7 +61,7 @@ class WhatsAppTemplateComponentsInner implements ModelInterface, ArrayAccess, \J
         'type' => 'string',
         'format' => 'string',
         'text' => 'string',
-        'buttons' => '\OpenAPI\Client\Model\TemplateComponentButtonsButtonsInner[]'
+        'buttons' => '\DengroCrm\VonageWhatsAppTemplateManagement\Model\TemplateComponentButtonsButtonsInner[]'
     ];
 
     /**
@@ -433,7 +433,7 @@ class WhatsAppTemplateComponentsInner implements ModelInterface, ArrayAccess, \J
     /**
      * Gets buttons
      *
-     * @return \OpenAPI\Client\Model\TemplateComponentButtonsButtonsInner[]|null
+     * @return \DengroCrm\VonageWhatsAppTemplateManagement\Model\TemplateComponentButtonsButtonsInner[]|null
      */
     public function getButtons()
     {
@@ -443,7 +443,7 @@ class WhatsAppTemplateComponentsInner implements ModelInterface, ArrayAccess, \J
     /**
      * Sets buttons
      *
-     * @param \OpenAPI\Client\Model\TemplateComponentButtonsButtonsInner[]|null $buttons An array of objects representing button components.
+     * @param \DengroCrm\VonageWhatsAppTemplateManagement\Model\TemplateComponentButtonsButtonsInner[]|null $buttons An array of objects representing button components.
      *
      * @return self
      */

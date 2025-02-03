@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  DengroCrm\VonageWhatsAppTemplateManagement
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace DengroCrm\VonageWhatsAppTemplateManagement\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \DengroCrm\VonageWhatsAppTemplateManagement\ObjectSerializer;
 
 /**
  * ListTemplates200Response Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  DengroCrm\VonageWhatsAppTemplateManagement
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,8 +58,8 @@ class ListTemplates200Response implements ModelInterface, ArrayAccess, \JsonSeri
       * @var string[]
       */
     protected static $openAPITypes = [
-        'paging' => '\OpenAPI\Client\Model\ListTemplates200ResponsePaging',
-        'templates' => '\OpenAPI\Client\Model\WhatsAppTemplate[]'
+        'paging' => '\DengroCrm\VonageWhatsAppTemplateManagement\Model\ListTemplates200ResponsePaging',
+        'templates' => '\DengroCrm\VonageWhatsAppTemplateManagement\Model\WhatsAppTemplate[]'
     ];
 
     /**
@@ -300,7 +300,7 @@ class ListTemplates200Response implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets paging
      *
-     * @return \OpenAPI\Client\Model\ListTemplates200ResponsePaging|null
+     * @return \DengroCrm\VonageWhatsAppTemplateManagement\Model\ListTemplates200ResponsePaging|null
      */
     public function getPaging()
     {
@@ -310,7 +310,7 @@ class ListTemplates200Response implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets paging
      *
-     * @param \OpenAPI\Client\Model\ListTemplates200ResponsePaging|null $paging paging
+     * @param \DengroCrm\VonageWhatsAppTemplateManagement\Model\ListTemplates200ResponsePaging|null $paging paging
      *
      * @return self
      */
@@ -327,7 +327,7 @@ class ListTemplates200Response implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets templates
      *
-     * @return \OpenAPI\Client\Model\WhatsAppTemplate[]|null
+     * @return \DengroCrm\VonageWhatsAppTemplateManagement\Model\WhatsAppTemplate[]|null
      */
     public function getTemplates()
     {
@@ -337,7 +337,7 @@ class ListTemplates200Response implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets templates
      *
-     * @param \OpenAPI\Client\Model\WhatsAppTemplate[]|null $templates An array of templates in the current list
+     * @param \DengroCrm\VonageWhatsAppTemplateManagement\Model\WhatsAppTemplate[]|null $templates An array of templates in the current list
      *
      * @return self
      */

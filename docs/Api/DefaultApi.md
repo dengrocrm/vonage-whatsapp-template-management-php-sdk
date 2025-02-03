@@ -1,4 +1,4 @@
-# OpenAPI\Client\DefaultApi
+# DengroCrm\VonageWhatsAppTemplateManagement\DefaultApi
 
 All URIs are relative to https://api.nexmo.com/v2/whatsapp-manager, except if the operation defines another base path.
 
@@ -15,7 +15,7 @@ All URIs are relative to https://api.nexmo.com/v2/whatsapp-manager, except if th
 ## `createTemplate()`
 
 ```php
-createTemplate($id, $content_type, $create_template_request): \OpenAPI\Client\Model\CreateTemplate200Response
+createTemplate($id, $content_type, $create_template_request): \DengroCrm\VonageWhatsAppTemplateManagement\Model\CreateTemplate200Response
 ```
 
 Create Template
@@ -30,10 +30,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer (JWT) authorization: bearerAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = DengroCrm\VonageWhatsAppTemplateManagement\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\DefaultApi(
+$apiInstance = new DengroCrm\VonageWhatsAppTemplateManagement\Api\DefaultApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -41,7 +41,7 @@ $apiInstance = new OpenAPI\Client\Api\DefaultApi(
 );
 $id = 'id_example'; // string | The id of the WABA
 $content_type = 'content_type_example'; // string | application/json
-$create_template_request = new \OpenAPI\Client\Model\CreateTemplateRequest(); // \OpenAPI\Client\Model\CreateTemplateRequest
+$create_template_request = new \DengroCrm\VonageWhatsAppTemplateManagement\Model\CreateTemplateRequest(); // \DengroCrm\VonageWhatsAppTemplateManagement\Model\CreateTemplateRequest
 
 try {
     $result = $apiInstance->createTemplate($id, $content_type, $create_template_request);
@@ -57,11 +57,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **id** | **string**| The id of the WABA | |
 | **content_type** | **string**| application/json | [optional] |
-| **create_template_request** | [**\OpenAPI\Client\Model\CreateTemplateRequest**](../Model/CreateTemplateRequest.md)|  | [optional] |
+| **create_template_request** | [**\DengroCrm\VonageWhatsAppTemplateManagement\Model\CreateTemplateRequest**](../Model/CreateTemplateRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\CreateTemplate200Response**](../Model/CreateTemplate200Response.md)
+[**\DengroCrm\VonageWhatsAppTemplateManagement\Model\CreateTemplate200Response**](../Model/CreateTemplate200Response.md)
 
 ### Authorization
 
@@ -94,10 +94,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer (JWT) authorization: bearerAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = DengroCrm\VonageWhatsAppTemplateManagement\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\DefaultApi(
+$apiInstance = new DengroCrm\VonageWhatsAppTemplateManagement\Api\DefaultApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -142,7 +142,7 @@ void (empty response body)
 ## `getTemplate()`
 
 ```php
-getTemplate($id, $template_id): \OpenAPI\Client\Model\WhatsAppTemplate
+getTemplate($id, $template_id): \DengroCrm\VonageWhatsAppTemplateManagement\Model\WhatsAppTemplate
 ```
 
 Get Template
@@ -157,10 +157,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer (JWT) authorization: bearerAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = DengroCrm\VonageWhatsAppTemplateManagement\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\DefaultApi(
+$apiInstance = new DengroCrm\VonageWhatsAppTemplateManagement\Api\DefaultApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -186,7 +186,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\WhatsAppTemplate**](../Model/WhatsAppTemplate.md)
+[**\DengroCrm\VonageWhatsAppTemplateManagement\Model\WhatsAppTemplate**](../Model/WhatsAppTemplate.md)
 
 ### Authorization
 
@@ -204,7 +204,7 @@ try {
 ## `listTemplates()`
 
 ```php
-listTemplates($id, $limit, $before, $after, $category, $content, $language, $name, $name_or_content, $quality_score, $status): \OpenAPI\Client\Model\ListTemplates200Response
+listTemplates($id, $limit, $before, $after, $category, $content, $language, $name, $name_or_content, $quality_score, $status): \DengroCrm\VonageWhatsAppTemplateManagement\Model\ListTemplates200Response
 ```
 
 List Templates
@@ -219,10 +219,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer (JWT) authorization: bearerAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = DengroCrm\VonageWhatsAppTemplateManagement\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\DefaultApi(
+$apiInstance = new DengroCrm\VonageWhatsAppTemplateManagement\Api\DefaultApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -266,7 +266,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ListTemplates200Response**](../Model/ListTemplates200Response.md)
+[**\DengroCrm\VonageWhatsAppTemplateManagement\Model\ListTemplates200Response**](../Model/ListTemplates200Response.md)
 
 ### Authorization
 
@@ -284,7 +284,7 @@ try {
 ## `mediaUpload()`
 
 ```php
-mediaUpload($file_type, $content_type, $mediafile): \OpenAPI\Client\Model\MediaUpload200Response
+mediaUpload($file_type, $content_type, $mediafile): \DengroCrm\VonageWhatsAppTemplateManagement\Model\MediaUpload200Response
 ```
 
 Media Upload
@@ -299,10 +299,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer (JWT) authorization: bearerAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = DengroCrm\VonageWhatsAppTemplateManagement\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\DefaultApi(
+$apiInstance = new DengroCrm\VonageWhatsAppTemplateManagement\Api\DefaultApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -330,7 +330,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\MediaUpload200Response**](../Model/MediaUpload200Response.md)
+[**\DengroCrm\VonageWhatsAppTemplateManagement\Model\MediaUpload200Response**](../Model/MediaUpload200Response.md)
 
 ### Authorization
 
@@ -363,10 +363,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer (JWT) authorization: bearerAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = DengroCrm\VonageWhatsAppTemplateManagement\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\DefaultApi(
+$apiInstance = new DengroCrm\VonageWhatsAppTemplateManagement\Api\DefaultApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -375,7 +375,7 @@ $apiInstance = new OpenAPI\Client\Api\DefaultApi(
 $id = 'id_example'; // string | The id of the WABA
 $template_id = 'template_id_example'; // string | The id of the template to be updated
 $content_type = 'content_type_example'; // string | application/json
-$update_template_request = new \OpenAPI\Client\Model\UpdateTemplateRequest(); // \OpenAPI\Client\Model\UpdateTemplateRequest
+$update_template_request = new \DengroCrm\VonageWhatsAppTemplateManagement\Model\UpdateTemplateRequest(); // \DengroCrm\VonageWhatsAppTemplateManagement\Model\UpdateTemplateRequest
 
 try {
     $apiInstance->updateTemplate($id, $template_id, $content_type, $update_template_request);
@@ -391,7 +391,7 @@ try {
 | **id** | **string**| The id of the WABA | |
 | **template_id** | **string**| The id of the template to be updated | |
 | **content_type** | **string**| application/json | [optional] |
-| **update_template_request** | [**\OpenAPI\Client\Model\UpdateTemplateRequest**](../Model/UpdateTemplateRequest.md)|  | [optional] |
+| **update_template_request** | [**\DengroCrm\VonageWhatsAppTemplateManagement\Model\UpdateTemplateRequest**](../Model/UpdateTemplateRequest.md)|  | [optional] |
 
 ### Return type
 

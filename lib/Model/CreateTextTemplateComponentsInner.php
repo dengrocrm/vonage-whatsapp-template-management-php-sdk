@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  DengroCrm\VonageWhatsAppTemplateManagement
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace DengroCrm\VonageWhatsAppTemplateManagement\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \DengroCrm\VonageWhatsAppTemplateManagement\ObjectSerializer;
 
 /**
  * CreateTextTemplateComponentsInner Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  DengroCrm\VonageWhatsAppTemplateManagement
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,8 +61,8 @@ class CreateTextTemplateComponentsInner implements ModelInterface, ArrayAccess, 
         'type' => 'string',
         'format' => 'string',
         'text' => 'string',
-        'example' => '\OpenAPI\Client\Model\CreateTextTemplateComponentsInnerExample',
-        'buttons' => '\OpenAPI\Client\Model\CreateTextTemplateComponentsInnerButtonsInner[]'
+        'example' => '\DengroCrm\VonageWhatsAppTemplateManagement\Model\CreateTextTemplateComponentsInnerExample',
+        'buttons' => '\DengroCrm\VonageWhatsAppTemplateManagement\Model\CreateTextTemplateComponentsInnerButtonsInner[]'
     ];
 
     /**
@@ -472,7 +472,7 @@ class CreateTextTemplateComponentsInner implements ModelInterface, ArrayAccess, 
     /**
      * Gets example
      *
-     * @return \OpenAPI\Client\Model\CreateTextTemplateComponentsInnerExample|null
+     * @return \DengroCrm\VonageWhatsAppTemplateManagement\Model\CreateTextTemplateComponentsInnerExample|null
      */
     public function getExample()
     {
@@ -482,7 +482,7 @@ class CreateTextTemplateComponentsInner implements ModelInterface, ArrayAccess, 
     /**
      * Sets example
      *
-     * @param \OpenAPI\Client\Model\CreateTextTemplateComponentsInnerExample|null $example example
+     * @param \DengroCrm\VonageWhatsAppTemplateManagement\Model\CreateTextTemplateComponentsInnerExample|null $example example
      *
      * @return self
      */
@@ -499,7 +499,7 @@ class CreateTextTemplateComponentsInner implements ModelInterface, ArrayAccess, 
     /**
      * Gets buttons
      *
-     * @return \OpenAPI\Client\Model\CreateTextTemplateComponentsInnerButtonsInner[]|null
+     * @return \DengroCrm\VonageWhatsAppTemplateManagement\Model\CreateTextTemplateComponentsInnerButtonsInner[]|null
      */
     public function getButtons()
     {
@@ -509,7 +509,7 @@ class CreateTextTemplateComponentsInner implements ModelInterface, ArrayAccess, 
     /**
      * Sets buttons
      *
-     * @param \OpenAPI\Client\Model\CreateTextTemplateComponentsInnerButtonsInner[]|null $buttons Where `type` is set to `BUTTONS`, an array of button objects representing the properties of each button.
+     * @param \DengroCrm\VonageWhatsAppTemplateManagement\Model\CreateTextTemplateComponentsInnerButtonsInner[]|null $buttons Where `type` is set to `BUTTONS`, an array of button objects representing the properties of each button.
      *
      * @return self
      */

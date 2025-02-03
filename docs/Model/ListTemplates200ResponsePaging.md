@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**cursors** | [**\OpenAPI\Client\Model\ListTemplates200ResponsePagingCursors**](ListTemplates200ResponsePagingCursors.md) |  | [optional]
+**cursors** | [**\DengroCrm\VonageWhatsAppTemplateManagement\Model\ListTemplates200ResponsePagingCursors**](ListTemplates200ResponsePagingCursors.md) |  | [optional]
 **next** | **string** | A URI to ge the next paginated page. | [optional]
 **previous** | **string** | A URI to ge the previous paginated page. | [optional]
 

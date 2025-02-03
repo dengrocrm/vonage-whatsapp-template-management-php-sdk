@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  DengroCrm\VonageWhatsAppTemplateManagement
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace DengroCrm\VonageWhatsAppTemplateManagement\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \DengroCrm\VonageWhatsAppTemplateManagement\ObjectSerializer;
 
 /**
  * CreateMediaTemplateComponentsInner Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  DengroCrm\VonageWhatsAppTemplateManagement
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,8 +61,8 @@ class CreateMediaTemplateComponentsInner implements ModelInterface, ArrayAccess,
         'type' => 'string',
         'format' => 'string',
         'text' => 'string',
-        'example' => '\OpenAPI\Client\Model\CreateMediaTemplateComponentsInnerExample',
-        'buttons' => '\OpenAPI\Client\Model\CreateMediaTemplateComponentsInnerButtonsInner[]'
+        'example' => '\DengroCrm\VonageWhatsAppTemplateManagement\Model\CreateMediaTemplateComponentsInnerExample',
+        'buttons' => '\DengroCrm\VonageWhatsAppTemplateManagement\Model\CreateMediaTemplateComponentsInnerButtonsInner[]'
     ];
 
     /**
@@ -478,7 +478,7 @@ class CreateMediaTemplateComponentsInner implements ModelInterface, ArrayAccess,
     /**
      * Gets example
      *
-     * @return \OpenAPI\Client\Model\CreateMediaTemplateComponentsInnerExample|null
+     * @return \DengroCrm\VonageWhatsAppTemplateManagement\Model\CreateMediaTemplateComponentsInnerExample|null
      */
     public function getExample()
     {
@@ -488,7 +488,7 @@ class CreateMediaTemplateComponentsInner implements ModelInterface, ArrayAccess,
     /**
      * Sets example
      *
-     * @param \OpenAPI\Client\Model\CreateMediaTemplateComponentsInnerExample|null $example example
+     * @param \DengroCrm\VonageWhatsAppTemplateManagement\Model\CreateMediaTemplateComponentsInnerExample|null $example example
      *
      * @return self
      */
@@ -505,7 +505,7 @@ class CreateMediaTemplateComponentsInner implements ModelInterface, ArrayAccess,
     /**
      * Gets buttons
      *
-     * @return \OpenAPI\Client\Model\CreateMediaTemplateComponentsInnerButtonsInner[]|null
+     * @return \DengroCrm\VonageWhatsAppTemplateManagement\Model\CreateMediaTemplateComponentsInnerButtonsInner[]|null
      */
     public function getButtons()
     {
@@ -515,7 +515,7 @@ class CreateMediaTemplateComponentsInner implements ModelInterface, ArrayAccess,
     /**
      * Sets buttons
      *
-     * @param \OpenAPI\Client\Model\CreateMediaTemplateComponentsInnerButtonsInner[]|null $buttons Where `type` is set to `BUTTONS`, an array of button objects representing the properties of each button.
+     * @param \DengroCrm\VonageWhatsAppTemplateManagement\Model\CreateMediaTemplateComponentsInnerButtonsInner[]|null $buttons Where `type` is set to `BUTTONS`, an array of button objects representing the properties of each button.
      *
      * @return self
      */

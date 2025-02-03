@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  DengroCrm\VonageWhatsAppTemplateManagement
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace DengroCrm\VonageWhatsAppTemplateManagement\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -35,16 +35,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use DengroCrm\VonageWhatsAppTemplateManagement\ApiException;
+use DengroCrm\VonageWhatsAppTemplateManagement\Configuration;
+use DengroCrm\VonageWhatsAppTemplateManagement\HeaderSelector;
+use DengroCrm\VonageWhatsAppTemplateManagement\ObjectSerializer;
 
 /**
  * DefaultApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  DengroCrm\VonageWhatsAppTemplateManagement
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -145,12 +145,12 @@ class DefaultApi
      *
      * @param  string $id The id of the WABA (required)
      * @param  string|null $content_type application/json (optional)
-     * @param  \OpenAPI\Client\Model\CreateTemplateRequest|null $create_template_request create_template_request (optional)
+     * @param  \DengroCrm\VonageWhatsAppTemplateManagement\Model\CreateTemplateRequest|null $create_template_request create_template_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createTemplate'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \DengroCrm\VonageWhatsAppTemplateManagement\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\CreateTemplate200Response|\OpenAPI\Client\Model\ErrorResponse401|\OpenAPI\Client\Model\ErrorResponse404|\OpenAPI\Client\Model\ErrorResponse422|\OpenAPI\Client\Model\ErrorResponse500
+     * @return \DengroCrm\VonageWhatsAppTemplateManagement\Model\CreateTemplate200Response|\DengroCrm\VonageWhatsAppTemplateManagement\Model\ErrorResponse401|\DengroCrm\VonageWhatsAppTemplateManagement\Model\ErrorResponse404|\DengroCrm\VonageWhatsAppTemplateManagement\Model\ErrorResponse422|\DengroCrm\VonageWhatsAppTemplateManagement\Model\ErrorResponse500
      */
     public function createTemplate($id, $content_type = null, $create_template_request = null, string $contentType = self::contentTypes['createTemplate'][0])
     {
@@ -165,12 +165,12 @@ class DefaultApi
      *
      * @param  string $id The id of the WABA (required)
      * @param  string|null $content_type application/json (optional)
-     * @param  \OpenAPI\Client\Model\CreateTemplateRequest|null $create_template_request (optional)
+     * @param  \DengroCrm\VonageWhatsAppTemplateManagement\Model\CreateTemplateRequest|null $create_template_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createTemplate'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \DengroCrm\VonageWhatsAppTemplateManagement\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\CreateTemplate200Response|\OpenAPI\Client\Model\ErrorResponse401|\OpenAPI\Client\Model\ErrorResponse404|\OpenAPI\Client\Model\ErrorResponse422|\OpenAPI\Client\Model\ErrorResponse500, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \DengroCrm\VonageWhatsAppTemplateManagement\Model\CreateTemplate200Response|\DengroCrm\VonageWhatsAppTemplateManagement\Model\ErrorResponse401|\DengroCrm\VonageWhatsAppTemplateManagement\Model\ErrorResponse404|\DengroCrm\VonageWhatsAppTemplateManagement\Model\ErrorResponse422|\DengroCrm\VonageWhatsAppTemplateManagement\Model\ErrorResponse500, HTTP status code, HTTP response headers (array of strings)
      */
     public function createTemplateWithHttpInfo($id, $content_type = null, $create_template_request = null, string $contentType = self::contentTypes['createTemplate'][0])
     {
@@ -201,11 +201,11 @@ class DefaultApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\CreateTemplate200Response' === '\SplFileObject') {
+                    if ('\DengroCrm\VonageWhatsAppTemplateManagement\Model\CreateTemplate200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\CreateTemplate200Response' !== 'string') {
+                        if ('\DengroCrm\VonageWhatsAppTemplateManagement\Model\CreateTemplate200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -223,16 +223,16 @@ class DefaultApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\CreateTemplate200Response', []),
+                        ObjectSerializer::deserialize($content, '\DengroCrm\VonageWhatsAppTemplateManagement\Model\CreateTemplate200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\OpenAPI\Client\Model\ErrorResponse401' === '\SplFileObject') {
+                    if ('\DengroCrm\VonageWhatsAppTemplateManagement\Model\ErrorResponse401' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorResponse401' !== 'string') {
+                        if ('\DengroCrm\VonageWhatsAppTemplateManagement\Model\ErrorResponse401' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -250,16 +250,16 @@ class DefaultApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorResponse401', []),
+                        ObjectSerializer::deserialize($content, '\DengroCrm\VonageWhatsAppTemplateManagement\Model\ErrorResponse401', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 404:
-                    if ('\OpenAPI\Client\Model\ErrorResponse404' === '\SplFileObject') {
+                    if ('\DengroCrm\VonageWhatsAppTemplateManagement\Model\ErrorResponse404' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorResponse404' !== 'string') {
+                        if ('\DengroCrm\VonageWhatsAppTemplateManagement\Model\ErrorResponse404' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -277,16 +277,16 @@ class DefaultApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorResponse404', []),
+                        ObjectSerializer::deserialize($content, '\DengroCrm\VonageWhatsAppTemplateManagement\Model\ErrorResponse404', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\OpenAPI\Client\Model\ErrorResponse422' === '\SplFileObject') {
+                    if ('\DengroCrm\VonageWhatsAppTemplateManagement\Model\ErrorResponse422' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorResponse422' !== 'string') {
+                        if ('\DengroCrm\VonageWhatsAppTemplateManagement\Model\ErrorResponse422' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -304,16 +304,16 @@ class DefaultApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorResponse422', []),
+                        ObjectSerializer::deserialize($content, '\DengroCrm\VonageWhatsAppTemplateManagement\Model\ErrorResponse422', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 500:
-                    if ('\OpenAPI\Client\Model\ErrorResponse500' === '\SplFileObject') {
+                    if ('\DengroCrm\VonageWhatsAppTemplateManagement\Model\ErrorResponse500' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorResponse500' !== 'string') {
+                        if ('\DengroCrm\VonageWhatsAppTemplateManagement\Model\ErrorResponse500' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -331,7 +331,7 @@ class DefaultApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorResponse500', []),
+                        ObjectSerializer::deserialize($content, '\DengroCrm\VonageWhatsAppTemplateManagement\Model\ErrorResponse500', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -350,7 +350,7 @@ class DefaultApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\CreateTemplate200Response';
+            $returnType = '\DengroCrm\VonageWhatsAppTemplateManagement\Model\CreateTemplate200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -383,7 +383,7 @@ class DefaultApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\CreateTemplate200Response',
+                        '\DengroCrm\VonageWhatsAppTemplateManagement\Model\CreateTemplate200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -391,7 +391,7 @@ class DefaultApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorResponse401',
+                        '\DengroCrm\VonageWhatsAppTemplateManagement\Model\ErrorResponse401',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -399,7 +399,7 @@ class DefaultApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorResponse404',
+                        '\DengroCrm\VonageWhatsAppTemplateManagement\Model\ErrorResponse404',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -407,7 +407,7 @@ class DefaultApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorResponse422',
+                        '\DengroCrm\VonageWhatsAppTemplateManagement\Model\ErrorResponse422',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -415,7 +415,7 @@ class DefaultApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorResponse500',
+                        '\DengroCrm\VonageWhatsAppTemplateManagement\Model\ErrorResponse500',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -432,7 +432,7 @@ class DefaultApi
      *
      * @param  string $id The id of the WABA (required)
      * @param  string|null $content_type application/json (optional)
-     * @param  \OpenAPI\Client\Model\CreateTemplateRequest|null $create_template_request (optional)
+     * @param  \DengroCrm\VonageWhatsAppTemplateManagement\Model\CreateTemplateRequest|null $create_template_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createTemplate'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -455,7 +455,7 @@ class DefaultApi
      *
      * @param  string $id The id of the WABA (required)
      * @param  string|null $content_type application/json (optional)
-     * @param  \OpenAPI\Client\Model\CreateTemplateRequest|null $create_template_request (optional)
+     * @param  \DengroCrm\VonageWhatsAppTemplateManagement\Model\CreateTemplateRequest|null $create_template_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createTemplate'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -463,7 +463,7 @@ class DefaultApi
      */
     public function createTemplateAsyncWithHttpInfo($id, $content_type = null, $create_template_request = null, string $contentType = self::contentTypes['createTemplate'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\CreateTemplate200Response';
+        $returnType = '\DengroCrm\VonageWhatsAppTemplateManagement\Model\CreateTemplate200Response';
         $request = $this->createTemplateRequest($id, $content_type, $create_template_request, $contentType);
 
         return $this->client
@@ -507,7 +507,7 @@ class DefaultApi
      *
      * @param  string $id The id of the WABA (required)
      * @param  string|null $content_type application/json (optional)
-     * @param  \OpenAPI\Client\Model\CreateTemplateRequest|null $create_template_request (optional)
+     * @param  \DengroCrm\VonageWhatsAppTemplateManagement\Model\CreateTemplateRequest|null $create_template_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createTemplate'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -623,7 +623,7 @@ class DefaultApi
      * @param  string $hsm_id The ID of the template to be deleted. This parameter is required unless &#x60;name&#x60; is specified. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteTemplate'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \DengroCrm\VonageWhatsAppTemplateManagement\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -642,7 +642,7 @@ class DefaultApi
      * @param  string $hsm_id The ID of the template to be deleted. This parameter is required unless &#x60;name&#x60; is specified. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteTemplate'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \DengroCrm\VonageWhatsAppTemplateManagement\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -680,7 +680,7 @@ class DefaultApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorResponse400',
+                        '\DengroCrm\VonageWhatsAppTemplateManagement\Model\ErrorResponse400',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -688,7 +688,7 @@ class DefaultApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorResponse401',
+                        '\DengroCrm\VonageWhatsAppTemplateManagement\Model\ErrorResponse401',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -696,7 +696,7 @@ class DefaultApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorResponse404',
+                        '\DengroCrm\VonageWhatsAppTemplateManagement\Model\ErrorResponse404',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -704,7 +704,7 @@ class DefaultApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorResponse500',
+                        '\DengroCrm\VonageWhatsAppTemplateManagement\Model\ErrorResponse500',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -917,9 +917,9 @@ class DefaultApi
      * @param  string $template_id The id of the template (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getTemplate'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \DengroCrm\VonageWhatsAppTemplateManagement\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\WhatsAppTemplate|\OpenAPI\Client\Model\ErrorResponse401|\OpenAPI\Client\Model\GetTemplate404Response|\OpenAPI\Client\Model\ErrorResponse500
+     * @return \DengroCrm\VonageWhatsAppTemplateManagement\Model\WhatsAppTemplate|\DengroCrm\VonageWhatsAppTemplateManagement\Model\ErrorResponse401|\DengroCrm\VonageWhatsAppTemplateManagement\Model\GetTemplate404Response|\DengroCrm\VonageWhatsAppTemplateManagement\Model\ErrorResponse500
      */
     public function getTemplate($id, $template_id, string $contentType = self::contentTypes['getTemplate'][0])
     {
@@ -936,9 +936,9 @@ class DefaultApi
      * @param  string $template_id The id of the template (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getTemplate'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \DengroCrm\VonageWhatsAppTemplateManagement\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\WhatsAppTemplate|\OpenAPI\Client\Model\ErrorResponse401|\OpenAPI\Client\Model\GetTemplate404Response|\OpenAPI\Client\Model\ErrorResponse500, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \DengroCrm\VonageWhatsAppTemplateManagement\Model\WhatsAppTemplate|\DengroCrm\VonageWhatsAppTemplateManagement\Model\ErrorResponse401|\DengroCrm\VonageWhatsAppTemplateManagement\Model\GetTemplate404Response|\DengroCrm\VonageWhatsAppTemplateManagement\Model\ErrorResponse500, HTTP status code, HTTP response headers (array of strings)
      */
     public function getTemplateWithHttpInfo($id, $template_id, string $contentType = self::contentTypes['getTemplate'][0])
     {
@@ -969,11 +969,11 @@ class DefaultApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\WhatsAppTemplate' === '\SplFileObject') {
+                    if ('\DengroCrm\VonageWhatsAppTemplateManagement\Model\WhatsAppTemplate' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\WhatsAppTemplate' !== 'string') {
+                        if ('\DengroCrm\VonageWhatsAppTemplateManagement\Model\WhatsAppTemplate' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -991,16 +991,16 @@ class DefaultApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\WhatsAppTemplate', []),
+                        ObjectSerializer::deserialize($content, '\DengroCrm\VonageWhatsAppTemplateManagement\Model\WhatsAppTemplate', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\OpenAPI\Client\Model\ErrorResponse401' === '\SplFileObject') {
+                    if ('\DengroCrm\VonageWhatsAppTemplateManagement\Model\ErrorResponse401' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorResponse401' !== 'string') {
+                        if ('\DengroCrm\VonageWhatsAppTemplateManagement\Model\ErrorResponse401' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1018,16 +1018,16 @@ class DefaultApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorResponse401', []),
+                        ObjectSerializer::deserialize($content, '\DengroCrm\VonageWhatsAppTemplateManagement\Model\ErrorResponse401', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 404:
-                    if ('\OpenAPI\Client\Model\GetTemplate404Response' === '\SplFileObject') {
+                    if ('\DengroCrm\VonageWhatsAppTemplateManagement\Model\GetTemplate404Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetTemplate404Response' !== 'string') {
+                        if ('\DengroCrm\VonageWhatsAppTemplateManagement\Model\GetTemplate404Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1045,16 +1045,16 @@ class DefaultApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetTemplate404Response', []),
+                        ObjectSerializer::deserialize($content, '\DengroCrm\VonageWhatsAppTemplateManagement\Model\GetTemplate404Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 500:
-                    if ('\OpenAPI\Client\Model\ErrorResponse500' === '\SplFileObject') {
+                    if ('\DengroCrm\VonageWhatsAppTemplateManagement\Model\ErrorResponse500' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorResponse500' !== 'string') {
+                        if ('\DengroCrm\VonageWhatsAppTemplateManagement\Model\ErrorResponse500' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1072,7 +1072,7 @@ class DefaultApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorResponse500', []),
+                        ObjectSerializer::deserialize($content, '\DengroCrm\VonageWhatsAppTemplateManagement\Model\ErrorResponse500', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1091,7 +1091,7 @@ class DefaultApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\WhatsAppTemplate';
+            $returnType = '\DengroCrm\VonageWhatsAppTemplateManagement\Model\WhatsAppTemplate';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1124,7 +1124,7 @@ class DefaultApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\WhatsAppTemplate',
+                        '\DengroCrm\VonageWhatsAppTemplateManagement\Model\WhatsAppTemplate',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1132,7 +1132,7 @@ class DefaultApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorResponse401',
+                        '\DengroCrm\VonageWhatsAppTemplateManagement\Model\ErrorResponse401',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1140,7 +1140,7 @@ class DefaultApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetTemplate404Response',
+                        '\DengroCrm\VonageWhatsAppTemplateManagement\Model\GetTemplate404Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1148,7 +1148,7 @@ class DefaultApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorResponse500',
+                        '\DengroCrm\VonageWhatsAppTemplateManagement\Model\ErrorResponse500',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1194,7 +1194,7 @@ class DefaultApi
      */
     public function getTemplateAsyncWithHttpInfo($id, $template_id, string $contentType = self::contentTypes['getTemplate'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\WhatsAppTemplate';
+        $returnType = '\DengroCrm\VonageWhatsAppTemplateManagement\Model\WhatsAppTemplate';
         $request = $this->getTemplateRequest($id, $template_id, $contentType);
 
         return $this->client
@@ -1363,9 +1363,9 @@ class DefaultApi
      * @param  string|null $status A filter for returning only templates matching a specific status. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['listTemplates'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \DengroCrm\VonageWhatsAppTemplateManagement\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ListTemplates200Response|\OpenAPI\Client\Model\ErrorResponse400|\OpenAPI\Client\Model\ErrorResponse401|\OpenAPI\Client\Model\ErrorResponse404|\OpenAPI\Client\Model\ErrorResponse429
+     * @return \DengroCrm\VonageWhatsAppTemplateManagement\Model\ListTemplates200Response|\DengroCrm\VonageWhatsAppTemplateManagement\Model\ErrorResponse400|\DengroCrm\VonageWhatsAppTemplateManagement\Model\ErrorResponse401|\DengroCrm\VonageWhatsAppTemplateManagement\Model\ErrorResponse404|\DengroCrm\VonageWhatsAppTemplateManagement\Model\ErrorResponse429
      */
     public function listTemplates($id, $limit = 25, $before = null, $after = null, $category = null, $content = null, $language = null, $name = null, $name_or_content = null, $quality_score = null, $status = null, string $contentType = self::contentTypes['listTemplates'][0])
     {
@@ -1391,9 +1391,9 @@ class DefaultApi
      * @param  string|null $status A filter for returning only templates matching a specific status. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['listTemplates'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \DengroCrm\VonageWhatsAppTemplateManagement\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ListTemplates200Response|\OpenAPI\Client\Model\ErrorResponse400|\OpenAPI\Client\Model\ErrorResponse401|\OpenAPI\Client\Model\ErrorResponse404|\OpenAPI\Client\Model\ErrorResponse429, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \DengroCrm\VonageWhatsAppTemplateManagement\Model\ListTemplates200Response|\DengroCrm\VonageWhatsAppTemplateManagement\Model\ErrorResponse400|\DengroCrm\VonageWhatsAppTemplateManagement\Model\ErrorResponse401|\DengroCrm\VonageWhatsAppTemplateManagement\Model\ErrorResponse404|\DengroCrm\VonageWhatsAppTemplateManagement\Model\ErrorResponse429, HTTP status code, HTTP response headers (array of strings)
      */
     public function listTemplatesWithHttpInfo($id, $limit = 25, $before = null, $after = null, $category = null, $content = null, $language = null, $name = null, $name_or_content = null, $quality_score = null, $status = null, string $contentType = self::contentTypes['listTemplates'][0])
     {
@@ -1424,11 +1424,11 @@ class DefaultApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ListTemplates200Response' === '\SplFileObject') {
+                    if ('\DengroCrm\VonageWhatsAppTemplateManagement\Model\ListTemplates200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ListTemplates200Response' !== 'string') {
+                        if ('\DengroCrm\VonageWhatsAppTemplateManagement\Model\ListTemplates200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1446,16 +1446,16 @@ class DefaultApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ListTemplates200Response', []),
+                        ObjectSerializer::deserialize($content, '\DengroCrm\VonageWhatsAppTemplateManagement\Model\ListTemplates200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\OpenAPI\Client\Model\ErrorResponse400' === '\SplFileObject') {
+                    if ('\DengroCrm\VonageWhatsAppTemplateManagement\Model\ErrorResponse400' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorResponse400' !== 'string') {
+                        if ('\DengroCrm\VonageWhatsAppTemplateManagement\Model\ErrorResponse400' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1473,16 +1473,16 @@ class DefaultApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorResponse400', []),
+                        ObjectSerializer::deserialize($content, '\DengroCrm\VonageWhatsAppTemplateManagement\Model\ErrorResponse400', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\OpenAPI\Client\Model\ErrorResponse401' === '\SplFileObject') {
+                    if ('\DengroCrm\VonageWhatsAppTemplateManagement\Model\ErrorResponse401' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorResponse401' !== 'string') {
+                        if ('\DengroCrm\VonageWhatsAppTemplateManagement\Model\ErrorResponse401' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1500,16 +1500,16 @@ class DefaultApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorResponse401', []),
+                        ObjectSerializer::deserialize($content, '\DengroCrm\VonageWhatsAppTemplateManagement\Model\ErrorResponse401', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 404:
-                    if ('\OpenAPI\Client\Model\ErrorResponse404' === '\SplFileObject') {
+                    if ('\DengroCrm\VonageWhatsAppTemplateManagement\Model\ErrorResponse404' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorResponse404' !== 'string') {
+                        if ('\DengroCrm\VonageWhatsAppTemplateManagement\Model\ErrorResponse404' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1527,16 +1527,16 @@ class DefaultApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorResponse404', []),
+                        ObjectSerializer::deserialize($content, '\DengroCrm\VonageWhatsAppTemplateManagement\Model\ErrorResponse404', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 429:
-                    if ('\OpenAPI\Client\Model\ErrorResponse429' === '\SplFileObject') {
+                    if ('\DengroCrm\VonageWhatsAppTemplateManagement\Model\ErrorResponse429' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorResponse429' !== 'string') {
+                        if ('\DengroCrm\VonageWhatsAppTemplateManagement\Model\ErrorResponse429' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1554,7 +1554,7 @@ class DefaultApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorResponse429', []),
+                        ObjectSerializer::deserialize($content, '\DengroCrm\VonageWhatsAppTemplateManagement\Model\ErrorResponse429', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1573,7 +1573,7 @@ class DefaultApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ListTemplates200Response';
+            $returnType = '\DengroCrm\VonageWhatsAppTemplateManagement\Model\ListTemplates200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1606,7 +1606,7 @@ class DefaultApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ListTemplates200Response',
+                        '\DengroCrm\VonageWhatsAppTemplateManagement\Model\ListTemplates200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1614,7 +1614,7 @@ class DefaultApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorResponse400',
+                        '\DengroCrm\VonageWhatsAppTemplateManagement\Model\ErrorResponse400',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1622,7 +1622,7 @@ class DefaultApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorResponse401',
+                        '\DengroCrm\VonageWhatsAppTemplateManagement\Model\ErrorResponse401',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1630,7 +1630,7 @@ class DefaultApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorResponse404',
+                        '\DengroCrm\VonageWhatsAppTemplateManagement\Model\ErrorResponse404',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1638,7 +1638,7 @@ class DefaultApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorResponse429',
+                        '\DengroCrm\VonageWhatsAppTemplateManagement\Model\ErrorResponse429',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1702,7 +1702,7 @@ class DefaultApi
      */
     public function listTemplatesAsyncWithHttpInfo($id, $limit = 25, $before = null, $after = null, $category = null, $content = null, $language = null, $name = null, $name_or_content = null, $quality_score = null, $status = null, string $contentType = self::contentTypes['listTemplates'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ListTemplates200Response';
+        $returnType = '\DengroCrm\VonageWhatsAppTemplateManagement\Model\ListTemplates200Response';
         $request = $this->listTemplatesRequest($id, $limit, $before, $after, $category, $content, $language, $name, $name_or_content, $quality_score, $status, $contentType);
 
         return $this->client
@@ -1957,9 +1957,9 @@ class DefaultApi
      * @param  \SplFileObject|null $mediafile The file to be uploaded. [See an example cURL request](/messages/guides/whatsapp-template-management#uploading-media) (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['mediaUpload'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \DengroCrm\VonageWhatsAppTemplateManagement\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\MediaUpload200Response|\OpenAPI\Client\Model\ErrorResponse400|\OpenAPI\Client\Model\ErrorResponse401|\OpenAPI\Client\Model\ErrorResponse500
+     * @return \DengroCrm\VonageWhatsAppTemplateManagement\Model\MediaUpload200Response|\DengroCrm\VonageWhatsAppTemplateManagement\Model\ErrorResponse400|\DengroCrm\VonageWhatsAppTemplateManagement\Model\ErrorResponse401|\DengroCrm\VonageWhatsAppTemplateManagement\Model\ErrorResponse500
      */
     public function mediaUpload($file_type, $content_type, $mediafile = null, string $contentType = self::contentTypes['mediaUpload'][0])
     {
@@ -1977,9 +1977,9 @@ class DefaultApi
      * @param  \SplFileObject|null $mediafile The file to be uploaded. [See an example cURL request](/messages/guides/whatsapp-template-management#uploading-media) (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['mediaUpload'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \DengroCrm\VonageWhatsAppTemplateManagement\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\MediaUpload200Response|\OpenAPI\Client\Model\ErrorResponse400|\OpenAPI\Client\Model\ErrorResponse401|\OpenAPI\Client\Model\ErrorResponse500, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \DengroCrm\VonageWhatsAppTemplateManagement\Model\MediaUpload200Response|\DengroCrm\VonageWhatsAppTemplateManagement\Model\ErrorResponse400|\DengroCrm\VonageWhatsAppTemplateManagement\Model\ErrorResponse401|\DengroCrm\VonageWhatsAppTemplateManagement\Model\ErrorResponse500, HTTP status code, HTTP response headers (array of strings)
      */
     public function mediaUploadWithHttpInfo($file_type, $content_type, $mediafile = null, string $contentType = self::contentTypes['mediaUpload'][0])
     {
@@ -2010,11 +2010,11 @@ class DefaultApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\MediaUpload200Response' === '\SplFileObject') {
+                    if ('\DengroCrm\VonageWhatsAppTemplateManagement\Model\MediaUpload200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\MediaUpload200Response' !== 'string') {
+                        if ('\DengroCrm\VonageWhatsAppTemplateManagement\Model\MediaUpload200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2032,16 +2032,16 @@ class DefaultApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\MediaUpload200Response', []),
+                        ObjectSerializer::deserialize($content, '\DengroCrm\VonageWhatsAppTemplateManagement\Model\MediaUpload200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\OpenAPI\Client\Model\ErrorResponse400' === '\SplFileObject') {
+                    if ('\DengroCrm\VonageWhatsAppTemplateManagement\Model\ErrorResponse400' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorResponse400' !== 'string') {
+                        if ('\DengroCrm\VonageWhatsAppTemplateManagement\Model\ErrorResponse400' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2059,16 +2059,16 @@ class DefaultApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorResponse400', []),
+                        ObjectSerializer::deserialize($content, '\DengroCrm\VonageWhatsAppTemplateManagement\Model\ErrorResponse400', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\OpenAPI\Client\Model\ErrorResponse401' === '\SplFileObject') {
+                    if ('\DengroCrm\VonageWhatsAppTemplateManagement\Model\ErrorResponse401' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorResponse401' !== 'string') {
+                        if ('\DengroCrm\VonageWhatsAppTemplateManagement\Model\ErrorResponse401' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2086,16 +2086,16 @@ class DefaultApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorResponse401', []),
+                        ObjectSerializer::deserialize($content, '\DengroCrm\VonageWhatsAppTemplateManagement\Model\ErrorResponse401', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 500:
-                    if ('\OpenAPI\Client\Model\ErrorResponse500' === '\SplFileObject') {
+                    if ('\DengroCrm\VonageWhatsAppTemplateManagement\Model\ErrorResponse500' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorResponse500' !== 'string') {
+                        if ('\DengroCrm\VonageWhatsAppTemplateManagement\Model\ErrorResponse500' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2113,7 +2113,7 @@ class DefaultApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorResponse500', []),
+                        ObjectSerializer::deserialize($content, '\DengroCrm\VonageWhatsAppTemplateManagement\Model\ErrorResponse500', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -2132,7 +2132,7 @@ class DefaultApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\MediaUpload200Response';
+            $returnType = '\DengroCrm\VonageWhatsAppTemplateManagement\Model\MediaUpload200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -2165,7 +2165,7 @@ class DefaultApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\MediaUpload200Response',
+                        '\DengroCrm\VonageWhatsAppTemplateManagement\Model\MediaUpload200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2173,7 +2173,7 @@ class DefaultApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorResponse400',
+                        '\DengroCrm\VonageWhatsAppTemplateManagement\Model\ErrorResponse400',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2181,7 +2181,7 @@ class DefaultApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorResponse401',
+                        '\DengroCrm\VonageWhatsAppTemplateManagement\Model\ErrorResponse401',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2189,7 +2189,7 @@ class DefaultApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorResponse500',
+                        '\DengroCrm\VonageWhatsAppTemplateManagement\Model\ErrorResponse500',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2237,7 +2237,7 @@ class DefaultApi
      */
     public function mediaUploadAsyncWithHttpInfo($file_type, $content_type, $mediafile = null, string $contentType = self::contentTypes['mediaUpload'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\MediaUpload200Response';
+        $returnType = '\DengroCrm\VonageWhatsAppTemplateManagement\Model\MediaUpload200Response';
         $request = $this->mediaUploadRequest($file_type, $content_type, $mediafile, $contentType);
 
         return $this->client
@@ -2408,10 +2408,10 @@ class DefaultApi
      * @param  string $id The id of the WABA (required)
      * @param  string $template_id The id of the template to be updated (required)
      * @param  string|null $content_type application/json (optional)
-     * @param  \OpenAPI\Client\Model\UpdateTemplateRequest|null $update_template_request update_template_request (optional)
+     * @param  \DengroCrm\VonageWhatsAppTemplateManagement\Model\UpdateTemplateRequest|null $update_template_request update_template_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateTemplate'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \DengroCrm\VonageWhatsAppTemplateManagement\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -2428,10 +2428,10 @@ class DefaultApi
      * @param  string $id The id of the WABA (required)
      * @param  string $template_id The id of the template to be updated (required)
      * @param  string|null $content_type application/json (optional)
-     * @param  \OpenAPI\Client\Model\UpdateTemplateRequest|null $update_template_request (optional)
+     * @param  \DengroCrm\VonageWhatsAppTemplateManagement\Model\UpdateTemplateRequest|null $update_template_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateTemplate'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \DengroCrm\VonageWhatsAppTemplateManagement\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -2469,7 +2469,7 @@ class DefaultApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorResponse400',
+                        '\DengroCrm\VonageWhatsAppTemplateManagement\Model\ErrorResponse400',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2477,7 +2477,7 @@ class DefaultApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorResponse401',
+                        '\DengroCrm\VonageWhatsAppTemplateManagement\Model\ErrorResponse401',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2485,7 +2485,7 @@ class DefaultApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorResponse404',
+                        '\DengroCrm\VonageWhatsAppTemplateManagement\Model\ErrorResponse404',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2493,7 +2493,7 @@ class DefaultApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorResponse500',
+                        '\DengroCrm\VonageWhatsAppTemplateManagement\Model\ErrorResponse500',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2511,7 +2511,7 @@ class DefaultApi
      * @param  string $id The id of the WABA (required)
      * @param  string $template_id The id of the template to be updated (required)
      * @param  string|null $content_type application/json (optional)
-     * @param  \OpenAPI\Client\Model\UpdateTemplateRequest|null $update_template_request (optional)
+     * @param  \DengroCrm\VonageWhatsAppTemplateManagement\Model\UpdateTemplateRequest|null $update_template_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateTemplate'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2535,7 +2535,7 @@ class DefaultApi
      * @param  string $id The id of the WABA (required)
      * @param  string $template_id The id of the template to be updated (required)
      * @param  string|null $content_type application/json (optional)
-     * @param  \OpenAPI\Client\Model\UpdateTemplateRequest|null $update_template_request (optional)
+     * @param  \DengroCrm\VonageWhatsAppTemplateManagement\Model\UpdateTemplateRequest|null $update_template_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateTemplate'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2575,7 +2575,7 @@ class DefaultApi
      * @param  string $id The id of the WABA (required)
      * @param  string $template_id The id of the template to be updated (required)
      * @param  string|null $content_type application/json (optional)
-     * @param  \OpenAPI\Client\Model\UpdateTemplateRequest|null $update_template_request (optional)
+     * @param  \DengroCrm\VonageWhatsAppTemplateManagement\Model\UpdateTemplateRequest|null $update_template_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateTemplate'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
