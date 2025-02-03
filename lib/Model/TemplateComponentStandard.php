@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  DengroCrm\VonageWhatsAppTemplateManagement
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace DengroCrm\VonageWhatsAppTemplateManagement\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \DengroCrm\VonageWhatsAppTemplateManagement\ObjectSerializer;
 
 /**
  * TemplateComponentStandard Class Doc Comment
  *
  * @category Class
  * @description A template component of &#x60;type&#x60; other than &#x60;BUTTONS&#x60;
- * @package  OpenAPI\Client
+ * @package  DengroCrm\VonageWhatsAppTemplateManagement
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>

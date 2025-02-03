@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  DengroCrm\VonageWhatsAppTemplateManagement
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace DengroCrm\VonageWhatsAppTemplateManagement\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \DengroCrm\VonageWhatsAppTemplateManagement\ObjectSerializer;
 
 /**
  * ListTemplates200ResponsePaging Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  DengroCrm\VonageWhatsAppTemplateManagement
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class ListTemplates200ResponsePaging implements ModelInterface, ArrayAccess, \Js
       * @var string[]
       */
     protected static $openAPITypes = [
-        'cursors' => '\OpenAPI\Client\Model\ListTemplates200ResponsePagingCursors',
+        'cursors' => '\DengroCrm\VonageWhatsAppTemplateManagement\Model\ListTemplates200ResponsePagingCursors',
         'next' => 'string',
         'previous' => 'string'
     ];
@@ -307,7 +307,7 @@ class ListTemplates200ResponsePaging implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets cursors
      *
-     * @return \OpenAPI\Client\Model\ListTemplates200ResponsePagingCursors|null
+     * @return \DengroCrm\VonageWhatsAppTemplateManagement\Model\ListTemplates200ResponsePagingCursors|null
      */
     public function getCursors()
     {
@@ -317,7 +317,7 @@ class ListTemplates200ResponsePaging implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets cursors
      *
-     * @param \OpenAPI\Client\Model\ListTemplates200ResponsePagingCursors|null $cursors cursors
+     * @param \DengroCrm\VonageWhatsAppTemplateManagement\Model\ListTemplates200ResponsePagingCursors|null $cursors cursors
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  DengroCrm\VonageWhatsAppTemplateManagement
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace DengroCrm\VonageWhatsAppTemplateManagement\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \DengroCrm\VonageWhatsAppTemplateManagement\ObjectSerializer;
 
 /**
  * UpdateTextTemplate Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  DengroCrm\VonageWhatsAppTemplateManagement
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -62,7 +62,7 @@ class UpdateTextTemplate implements ModelInterface, ArrayAccess, \JsonSerializab
         'language' => 'string',
         'category' => 'string',
         'allow_category_change' => 'bool',
-        'components' => '\OpenAPI\Client\Model\CreateTextTemplateComponentsInner[]'
+        'components' => '\DengroCrm\VonageWhatsAppTemplateManagement\Model\CreateTextTemplateComponentsInner[]'
     ];
 
     /**
@@ -481,7 +481,7 @@ class UpdateTextTemplate implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets components
      *
-     * @return \OpenAPI\Client\Model\CreateTextTemplateComponentsInner[]
+     * @return \DengroCrm\VonageWhatsAppTemplateManagement\Model\CreateTextTemplateComponentsInner[]
      */
     public function getComponents()
     {
@@ -491,7 +491,7 @@ class UpdateTextTemplate implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets components
      *
-     * @param \OpenAPI\Client\Model\CreateTextTemplateComponentsInner[] $components An array of objects representing the parts of the template itself.
+     * @param \DengroCrm\VonageWhatsAppTemplateManagement\Model\CreateTextTemplateComponentsInner[] $components An array of objects representing the parts of the template itself.
      *
      * @return self
      */

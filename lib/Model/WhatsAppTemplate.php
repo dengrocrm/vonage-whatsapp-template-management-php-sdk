@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  DengroCrm\VonageWhatsAppTemplateManagement
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace DengroCrm\VonageWhatsAppTemplateManagement\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \DengroCrm\VonageWhatsAppTemplateManagement\ObjectSerializer;
 
 /**
  * WhatsAppTemplate Class Doc Comment
  *
  * @category Class
  * @description A template object.
- * @package  OpenAPI\Client
+ * @package  DengroCrm\VonageWhatsAppTemplateManagement
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -65,7 +65,7 @@ class WhatsAppTemplate implements ModelInterface, ArrayAccess, \JsonSerializable
         'status' => 'string',
         'category' => 'string',
         'previous_category' => 'string',
-        'components' => '\OpenAPI\Client\Model\WhatsAppTemplateComponentsInner[]'
+        'components' => '\DengroCrm\VonageWhatsAppTemplateManagement\Model\WhatsAppTemplateComponentsInner[]'
     ];
 
     /**
@@ -580,7 +580,7 @@ class WhatsAppTemplate implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets components
      *
-     * @return \OpenAPI\Client\Model\WhatsAppTemplateComponentsInner[]|null
+     * @return \DengroCrm\VonageWhatsAppTemplateManagement\Model\WhatsAppTemplateComponentsInner[]|null
      */
     public function getComponents()
     {
@@ -590,7 +590,7 @@ class WhatsAppTemplate implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets components
      *
-     * @param \OpenAPI\Client\Model\WhatsAppTemplateComponentsInner[]|null $components An array of objects representing the parts of the template itself.
+     * @param \DengroCrm\VonageWhatsAppTemplateManagement\Model\WhatsAppTemplateComponentsInner[]|null $components An array of objects representing the parts of the template itself.
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  DengroCrm\VonageWhatsAppTemplateManagement
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,7 +27,7 @@
  * Please update the test case below to test the model.
  */
 
-namespace OpenAPI\Client\Test\Model;
+namespace DengroCrm\VonageWhatsAppTemplateManagement\Test\Model;
 
 use PHPUnit\Framework\TestCase;
 
@@ -36,7 +36,7 @@ use PHPUnit\Framework\TestCase;
  *
  * @category    Class
  * @description Must be included when the &#x60;type&#x60; is &#x60;HEADER&#x60; and &#x60;format&#x60; is one of &#x60;IMAGE&#x60;, &#x60;DOCUMENT&#x60;, or &#x60;VIDEO&#x60;, or when the &#x60;format&#x60; is &#x60;text&#x60; and placeholders are used. Not allowed for other component types.&#39;
- * @package     OpenAPI\Client
+ * @package     DengroCrm\VonageWhatsAppTemplateManagement
  * @author      OpenAPI Generator team
  * @link        https://openapi-generator.tech
  */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  DengroCrm\VonageWhatsAppTemplateManagement
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace DengroCrm\VonageWhatsAppTemplateManagement\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \DengroCrm\VonageWhatsAppTemplateManagement\ObjectSerializer;
 
 /**
  * TemplateComponentButtons Class Doc Comment
  *
  * @category Class
  * @description A template component with a &#x60;type&#x60; of &#x60;BUTTONS&#x60;
- * @package  OpenAPI\Client
+ * @package  DengroCrm\VonageWhatsAppTemplateManagement
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,7 +60,7 @@ class TemplateComponentButtons implements ModelInterface, ArrayAccess, \JsonSeri
       */
     protected static $openAPITypes = [
         'type' => 'string',
-        'buttons' => '\OpenAPI\Client\Model\TemplateComponentButtonsButtonsInner[]'
+        'buttons' => '\DengroCrm\VonageWhatsAppTemplateManagement\Model\TemplateComponentButtonsButtonsInner[]'
     ];
 
     /**
@@ -360,7 +360,7 @@ class TemplateComponentButtons implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets buttons
      *
-     * @return \OpenAPI\Client\Model\TemplateComponentButtonsButtonsInner[]|null
+     * @return \DengroCrm\VonageWhatsAppTemplateManagement\Model\TemplateComponentButtonsButtonsInner[]|null
      */
     public function getButtons()
     {
@@ -370,7 +370,7 @@ class TemplateComponentButtons implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets buttons
      *
-     * @param \OpenAPI\Client\Model\TemplateComponentButtonsButtonsInner[]|null $buttons An array of objects representing button components.
+     * @param \DengroCrm\VonageWhatsAppTemplateManagement\Model\TemplateComponentButtonsButtonsInner[]|null $buttons An array of objects representing button components.
      *
      * @return self
      */

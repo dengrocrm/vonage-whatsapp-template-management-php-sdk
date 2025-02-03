@@ -10,6 +10,6 @@ Name | Type | Description | Notes
 **status** | **string** | The status of the template. Templates with a status of &#x60;APPROVED&#x60; can be used in WhatsApp template messages. | [optional]
 **category** | **string** | The category of the template. This determines the purpose of the template. Note: until June 1st 2023 some older template categories may be listed. These should be updated to one the valid categories or they will be automatically migrated. | [optional]
 **previous_category** | **string** | If the template has been updated to a different category, shows the previous category of the template. | [optional]
-**components** | [**\OpenAPI\Client\Model\WhatsAppTemplateComponentsInner[]**](WhatsAppTemplateComponentsInner.md) | An array of objects representing the parts of the template itself. | [optional]
+**components** | [**\DengroCrm\VonageWhatsAppTemplateManagement\Model\WhatsAppTemplateComponentsInner[]**](WhatsAppTemplateComponentsInner.md) | An array of objects representing the parts of the template itself. | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)
