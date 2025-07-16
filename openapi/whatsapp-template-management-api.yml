@@ -24,6 +24,8 @@ servers:
 paths:
   /wabas/{id}/templates:
     get:
+      tags:
+        - WhatsAppTemplate
       security:
         - bearerAuth: []
       summary: List Templates
@@ -195,6 +197,8 @@ paths:
         required: true
         description: The id of the WABA
     post:
+      tags:
+        - WhatsAppTemplate
       security:
         - bearerAuth: []
       summary: Create Template
@@ -255,6 +259,8 @@ paths:
                 - $ref: "#/components/schemas/CreateTextTemplate"
                 - $ref: "#/components/schemas/CreateMediaTemplate"
     delete:
+      tags:
+        - WhatsAppTemplate
       security:
         - bearerAuth: []
       summary: Delete Template
@@ -306,6 +312,8 @@ paths:
       description: Delete a template of the specified name associated with the WABA ID
   /wabas/{id}/templates/{template_id}:
     get:
+      tags:
+        - WhatsAppTemplate
       security:
         - bearerAuth: []
       summary: Get Template
@@ -353,6 +361,8 @@ paths:
           required: true
           description: The id of the template
     put:
+      tags:
+        - WhatsAppTemplate
       security:
         - bearerAuth: []
       summary: Update Template
@@ -412,6 +422,8 @@ paths:
                 - $ref: "#/components/schemas/UpdateMediaTemplate"
   /media/uploads:
     post:
+      tags:
+        - WhatsAppTemplate
       security:
         - bearerAuth: []
       summary: Media Upload
