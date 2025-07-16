@@ -4,7 +4,7 @@
 .travis.yml
 README.md
 composer.json
-docs/Api/DefaultApi.md
+docs/Api/WhatsAppTemplateApi.md
 docs/Model/CreateMediaTemplate.md
 docs/Model/CreateMediaTemplateComponentsInner.md
 docs/Model/CreateMediaTemplateComponentsInnerButtonsInner.md
@@ -37,7 +37,7 @@ docs/Model/WabaNotFound.md
 docs/Model/WhatsAppTemplate.md
 docs/Model/WhatsAppTemplateComponentsInner.md
 git_push.sh
-lib/Api/DefaultApi.php
+lib/Api/WhatsAppTemplateApi.php
 lib/ApiException.php
 lib/Configuration.php
 lib/FormDataProcessor.php
@@ -76,7 +76,7 @@ lib/Model/WhatsAppTemplate.php
 lib/Model/WhatsAppTemplateComponentsInner.php
 lib/ObjectSerializer.php
 phpunit.xml.dist
-test/Api/DefaultApiTest.php
+test/Api/WhatsAppTemplateApiTest.php
 test/Model/CreateMediaTemplateComponentsInnerButtonsInnerTest.php
 test/Model/CreateMediaTemplateComponentsInnerExampleTest.php
 test/Model/CreateMediaTemplateComponentsInnerTest.php
