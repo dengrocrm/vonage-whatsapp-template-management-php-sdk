@@ -1,6 +1,6 @@
 openapi: 3.0.3
 info:
-  version: 1.4.0
+  version: 1.4.1
   title: WhatsApp Template Management API
   x-metaTitle: Vonage WhatsApp Template Management API Reference | Vonage API Documentation
   x-metaDescription: Find quick answers to questions about the Vonage WhatsApp
@@ -1213,6 +1213,7 @@ components:
                   - QUICK_REPLY
                   - URL
                   - PHONE_NUMBER
+                  - FLOW
                 example: QUICK_REPLY
               text:
                 type: string
@@ -1230,6 +1231,42 @@ components:
                 description: Phone number to which a phone call would be placed by the end-user
                   when hitting the button.
                 example: "8001111111"
+              flow_id:
+                type: string
+                description: >
+                  The unique ID of the Flow.
+                  Cannot be used if flow_name or flow_json parameters are provided.
+                  Only one of these parameters is required.
+                example: "1234567890"
+              flow_name:
+                type: string
+                description: >
+                  The name of the Flow. Supported in Cloud API only. The Flow ID is stored in the message template,
+                  not the name, so changing the Flow name will not affect existing message templates.
+                  Cannot be used if flow_id or flow_json parameters are provided.
+                  Only one of these parameters is required.
+                example: "my_flow"
+              flow_json:
+                type: string
+                description: >
+                  The Flow JSON encoded as string with escaping. The Flow JSON specifies the content of the Flow.
+                  Supported in Cloud API only.
+                  Cannot be used if flow_id or flow_name parameters are provided.
+                  Only one of these parameters is required.
+                example: '{"version": "1.0", "content": [{"type": "text", "text": "Hello"}]}'
+              flow_action:
+                type: string
+                description: >
+                  Either navigate or data_exchange.
+                  (Default value: navigate)
+                example: navigate
+              navigate_screen:
+                type: string
+                description: >
+                  Optional if flow_action is navigate. The unique ID of the Screen in the Flow.
+                  Only used if flow_action is set to navigate.
+                  (Default value: "FIRST_ENTRY_SCREEN")
+                example: "FIRST_ENTRY_SCREEN"
     ErrorResponse400:
       type: object
       properties:

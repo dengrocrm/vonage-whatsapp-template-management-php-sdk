@@ -1,0 +1,6 @@
+{
+  "invokerPackage": "DengroCrm\\VonageWhatsAppTemplateManagement",
+  "testNamespaceApi": "DengroCrm\\VonageWhatsAppTemplateManagement\\Tests\\Api",
+  "testNamespaceModel": "DengroCrm\\VonageWhatsAppTemplateManagement\\Tests\\Models"
+}
+
